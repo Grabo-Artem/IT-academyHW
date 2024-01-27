@@ -1,2 +1,4 @@
 # IT-academyHW
-домашнее занятие 3
+homework 1
+
+new changes
