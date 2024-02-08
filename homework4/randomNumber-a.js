@@ -1,6 +1,5 @@
 let num = 15
 let numpise = 3
-
 let obj =[]
 let num1 = num
 
@@ -19,6 +18,5 @@ if (sumOfNumbers < num)
 else
     lastnum = 0
 
-// console.log (`Last num ${lastnum}`)
 obj.push(lastnum)
 console.log(`Number ${num} consists of numbers:${obj}`)
