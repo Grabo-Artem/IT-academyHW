@@ -1,17 +1,17 @@
+let start = 5  // ряд начиная с N члена
+let max = 3 // длинной массива M
 
-let n = 7;
-let m = 3;
-let arr = [];
+console.log(getFibobonacciLenth(start, max))
 
-function getFibonacci (num) {
-    return num <= 1 ? num : getFibonacci(num-1) + getFibonacci(num-2)
-}
+function getFibobonacciLenth (st, m) {
+    let arr= [0, 1]
+    length = st+m
+    for (let a=1; a<=length; a++) {
+        arr.push(getOneFibonacci(a))
 
-function arrLine (start, number) {
-       for (let i=start; i < (start+number); i++) {
-            arr.push(getFibonacci(i));
+        function getOneFibonacci(i) {
+            return i <= 1 ? i : getOneFibonacci(i - 1) + getOneFibonacci(i - 2)
         }
-        return arr;
     }
-
-console.log(arrLine(n,m));
+    return arr.slice(st, length)
+}

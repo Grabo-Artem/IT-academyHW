@@ -1,9 +1,11 @@
 let arr = [1, 2, 3, 4, 5]
 let newPart = [ 'a', 'b', 'c']
-let place = 4
+let place = 3
 
-function newArray(ind, newdata){
-    newarr = arr.splice(ind, 0, newdata)
-    return arr.flat()
+function newArray(arr, place, newPart){
+    let resultArr = arr.slice(0, place);
+    resultArr = resultArr.concat(newPart, arr.slice(place));
+    return resultArr;
+
 }
-console.log(newArray(place,newPart))
+console.log(newArray(arr, place, newPart))
