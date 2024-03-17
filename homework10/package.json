@@ -1,0 +1,12 @@
+{
+  "name": "homework10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "UT.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
