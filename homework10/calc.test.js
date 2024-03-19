@@ -1,4 +1,5 @@
 const Calculator = require('./calculator');
+const assert = require('assert');
 const calc = new Calculator();
 
 describe('check Add-functionality', function () {
@@ -28,8 +29,8 @@ describe('check Add-functionality', function () {
 
 
     test('check addition of numbers (number is written as string)', async () => {
-        const result = calc.add('3', 5, -5);
-        assert.isTrue(expect(typeof result).toEqual('number'));
+        const result = calc.add('A', 5, -5);
+        expect(typeof result).not.toBe('number');
     });
 
     test('check addition of fractional numbers ', async () => {
@@ -199,7 +200,7 @@ describe('check Divide-functionality', function () {
     });
 
 
-    xit('check result of division of more than 2 numbers', async () => {
+    it('check result of division of more than 2 numbers', async () => {
         const result = calc.divide(10, 2, 5);
         expect(result).toBe(1);
     });
@@ -213,7 +214,7 @@ describe('check Divide-functionality', function () {
     });
 
 
-    xit.each([
+    it.each([
         [0, 2, 0],
         [0, -2, 0],
     ])('check divide of  "zero" to number: %d / %d = %d', async (a, b, c) => {
