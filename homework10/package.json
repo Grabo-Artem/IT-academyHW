@@ -4,7 +4,7 @@
   "description": "",
   "main": "UT.test.js",
   "scripts": {
-    "start": "node file.js",
+    "start": "node calc.test.js",
     "test": "jest"
   },
   "keywords": [],
