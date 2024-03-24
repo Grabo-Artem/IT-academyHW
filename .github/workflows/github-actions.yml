@@ -23,9 +23,6 @@ jobs:
       - name: Dependencies
         working-directory: ./homework10
         run: npm i
-      - name: Install Jest
-        working-directory: ./homework10
-        run: npm install jest
       - name: Run tests
         working-directory: ./homework10
         run: npm run test

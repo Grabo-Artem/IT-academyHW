@@ -202,7 +202,7 @@ describe('check Divide-functionality', function () {
 
     it('check result of division of more than 2 numbers', async () => {
         const result = calc.divide(10, 2, 5);
-        expect(result).toBe(1);
+        expect(result).toEqual(1);
     });
 
     it.each([
